@@ -1,5 +1,5 @@
 # Streamable API Wrapper (SPAW)
-SPAW is an **Unofficial**   Streamable API wrapper for Python.  
+SPAW is an **Unoffical**   Streamable API wrapper for Python.  
 
 ## Streamable API Documentation
 https://streamable.com/documentation
@@ -43,7 +43,7 @@ Returns JSON with Shortcode and Status
 ```
 {'status': 1, 'shortcode': 'code'}
 ```
-The link to the video will be https://streamable.com/code where code is the returned shortcode.
+The link to the video will be https://streamable.com/code
 
 ### Upload a Video
 Takes in given filename for a video and uploads it onto Streamable.
