@@ -14,9 +14,15 @@ json
 ```
 
 ## Usage
+Install through pip  
+```
+pip3 install spaw
+```  
 To initialize an instance:  
 ``` 
-streamable = SPAW() 
+import spaw  
+
+spaw.SPAW() 
 ```
 
 ### Authentication
