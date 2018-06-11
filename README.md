@@ -37,7 +37,7 @@ Where the arguments are the email and password of your Streamable account.
 ### Import a Video
 Takes in given URL of a video and imports/uploads it onto Streamable.  
 ```
-SPAW.importVideo(url)
+SPAW.videoImport(url)
 ```
 Returns JSON with Shortcode and Status
 ```
@@ -48,7 +48,7 @@ The link to the video will be https://streamable.com/code
 ### Upload a Video
 Takes in given filename for a video and uploads it onto Streamable.
 ```
-SPAW.uploadVideo(filename)
+SPAW.videoUpload(filename)
 ```
 Returns JSON with Shortcode and Status just like importVideo()
 
