@@ -8,18 +8,22 @@ class SPAW:
     """
     Streamable API require a Streamable account for Basic Auth to use the API.
     Authentication is not need to Retrieve a video in oEmbed format, but the is needed for the rest of functions.
-
-    Args:
-        email: Streamable account email 
-        password: Streamable account password 
-
+    
     """
-
+    
     def __init__(self):
         self.email = None
         self.password = None
 
     def auth(self, email, password):
+        """
+        Takes in the email and password for Authentication to use the Streamable API
+        Args:
+            email: Streamable account email 
+            password: Streamable account password 
+
+        """
+    
         self.email = email
         self.password = password
 
@@ -56,6 +60,7 @@ class SPAW:
             JSON with Shortcode and Status. {'status': int, 'shortcode': 'url_code'}
 
         """
+        
         try:
             response = requests.get('https://api.streamable.com/import?url='+url, auth=(self.email, self.password)).json()
             return response
