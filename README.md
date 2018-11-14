@@ -1,19 +1,25 @@
 # Streamable API Wrapper (SPAW)
 SPAW is an **Unoffical**   Streamable API wrapper for Python.  
 
-## Streamable API Documentation
+#### Streamable API Documentation
 https://streamable.com/documentation
 
-## Requirments
+#### Example Program  
+A simple Reddit bot that mirrors facebook video to Streamable.  
+https://github.com/amohamed11/FacebookMirrorBot/blob/master/Redditbot.py  
+
+
+
+## Usage
+#### Requirments
 Python 3.5+  
 
 The following modules are also used:
 ```
 requests
 json
-```
+```  
 
-## Usage
 Install through pip  
 ```
 pip3 install spaw
@@ -23,18 +29,18 @@ To initialize an instance:
 import spaw  
 
 spaw.SPAW() 
-```
+```   
 
-### Authentication
+#### Authentication
 Streamable uses Basic Auth for their API.  
-**As such the Streamable API requires Authentication to Upload/Import a video or to Retrieve a video in raw mp4 embed format.  
-Only Retrieving a video in oEmbed format is allowed without Authentication.**  
+As such the Streamable API **requires Authentication** to Upload/Import a video or to Retrieve a video in raw mp4 embed format.  
+Only Retrieving a video in oEmbed format is allowed without Authentication.  
 To authenticate:
 ```
 SPAW.auth(email, password)
 ```  
 Where the arguments are the email and password of your Streamable account.
-### Import a Video
+#### Import a Video
 Takes in given URL of a video and imports/uploads it onto Streamable.  
 ```
 SPAW.videoImport(url)
@@ -43,16 +49,17 @@ Returns JSON with Shortcode and Status
 ```
 {'status': 1, 'shortcode': 'code'}
 ```
-The link to the video will be https://streamable.com/code
+The link to the video will be https://streamable.com/code   
+Where code is the returned 'shortcode'.
 
-### Upload a Video
+#### Upload a Video
 Takes in given filename for a video and uploads it onto Streamable.
 ```
 SPAW.videoUpload(filename)
 ```
 Returns JSON with Shortcode and Status just like importVideo()
 
-### Retrieve a Video
+#### Retrieve a Video
 Retrieves a Streamable video as embed code given the shortcode of video URL.  
 The embed video can be retrieved as oEmbed or a raw mp4. by default set to 'raw'. 
 ```
