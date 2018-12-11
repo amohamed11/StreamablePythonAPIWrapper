@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="spaw",
-    version="0.1.6",
+    version="0.2",
     author="Anas Mohamed",
     author_email="amohamed@ualberta.ca",
     description="SPAW is an Unofficial Streamable API Wrapper for Python",
@@ -15,7 +15,7 @@ setup(
     packages=find_packages(),
     classifiers=(
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: GNU General Public License v3.0",
         "Operating System :: OS Independent",
     ),
 )

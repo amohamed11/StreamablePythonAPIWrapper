@@ -1,0 +1,9 @@
+deploy:
+  provider: pypi
+  user: amohamed11
+  password:
+    secure: gs9aRLyBHQ7kiokpkjdi2St8q7FGxlOX1S2Z8nIbdlctAUXTM3pCHGSU/shDIsVvKc2OslPU6CknUPlylfDi9u/2xwkWT3hLznHyyj8lKEw35gl5OzGM/kB+i2vTs9IwRxmjtL1tKN2VjYtvRJhdk/pKiJlimVZh8twyHL8xFhaI3oZCdSklVxFLJP1hU1WYo3q/ILrgcI9LWUMlsPDKd5g07f8fvdrSs16ovpG5RYkwlhIP1+iGB5tY1ZemlecvzP3O+uiT/zkxx0zN1/6aaYbG1jDlQc4pPRSHGR+Vklcam95N+3J486EnzZ6eRMiDNeBZkKk/iid0aVcHP8nupy11hwI2P0zs+/EcKs6a+BMTwIdnY8Q4HffacyCz+8g8UDMNfZGZCXdrAvPli91WXyUIXnWl/K0oAL1IyFMkpa+fzv0GzwPqK6MTGfDkkQNJvHAii8rbsD2Z93Ve/iegFJRMJShiPT2ak7LvARqIGIdvSPHT4cpPg+ISjQfTyVpplW1U2PrbJGUG89DqihdBxWzmi2TwaHpy9US6TmPH43ltAI4kFtE5jbEqvvWv0PezQZ8CXO296CEVW233F8BrC5oPGB5TfRNOXChrARyECd7PiE8206y08IgjePJmb9IxF7EkiYa7IpqBgg9BgygdUCXixt1Pbpew4r6KAVFEe98=
+  on:
+    tags: true
+    branch: master
+  
